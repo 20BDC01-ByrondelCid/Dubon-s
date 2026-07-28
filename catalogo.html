@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo | Dubon's</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">DUBON<span>'</span>S</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+      <li><a class="nav-link" href="comparador.html">Comparador</a></li>
+      <li><a class="nav-link" href="financiamiento.html">Financiamiento</a></li>
+      <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+      <li><span class="nav-badge">♥ <b data-fav-count>0</b></span></li>
+      <li><span class="nav-badge">⇄ <b data-cmp-count>0</b></span></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="seccion contenedor">
+  <div class="seccion-titulo">
+    <div>
+      <h1 style="font-size:2rem;">Catálogo</h1>
+      <p>Filtrá por marca, tipo, condición y precio.</p>
+    </div>
+  </div>
+
+  <form class="filtros" id="formFiltros">
+    <div class="campo">
+      <label for="fMarca">Marca</label>
+      <select id="fMarca"><option value="">Todas</option></select>
+    </div>
+    <div class="campo">
+      <label for="fTipo">Tipo</label>
+      <select id="fTipo"><option value="">Todos</option></select>
+    </div>
+    <div class="campo">
+      <label for="fCondicion">Condición</label>
+      <select id="fCondicion">
+        <option value="">Todas</option>
+        <option value="Nuevo">Nuevo</option>
+        <option value="Seminuevo">Seminuevo</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="fPrecio">Precio máximo</label>
+      <select id="fPrecio">
+        <option value="">Sin límite</option>
+        <option value="18000">Hasta Q 18,000</option>
+        <option value="25000">Hasta Q 25,000</option>
+        <option value="35000">Hasta Q 35,000</option>
+        <option value="50000">Hasta Q 50,000</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="fOrden">Ordenar por</label>
+      <select id="fOrden">
+        <option value="relevancia">Relevancia</option>
+        <option value="precio-asc">Precio: menor a mayor</option>
+        <option value="precio-desc">Precio: mayor a menor</option>
+        <option value="anio-desc">Año: más reciente</option>
+      </select>
+    </div>
+    <div class="campo">
+      <button type="button" id="btnLimpiar" class="btn btn-outline-ink">Limpiar filtros</button>
+    </div>
+  </form>
+
+  <p class="resultado-conteo" id="conteoResultados"></p>
+  <div class="grid-catalogo" id="gridCatalogo"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="contenedor footer-legal">
+    <span>© <span data-anio></span> Dubon's. Proyecto académico — Feria Científica de Informática.</span>
+    <a href="index.html" style="color:var(--amber);">Volver al inicio</a>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/db.js"></script>
+<script src="js/main.js"></script>
+<script src="js/catalogo.js"></script>
+</body>
+</html>

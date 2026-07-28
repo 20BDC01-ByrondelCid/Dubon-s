@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha de vehículo | Dubon's</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">DUBON<span>'</span>S</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+      <li><a class="nav-link" href="comparador.html">Comparador</a></li>
+      <li><a class="nav-link" href="financiamiento.html">Financiamiento</a></li>
+      <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+      <li><span class="nav-badge">♥ <b data-fav-count>0</b></span></li>
+      <li><span class="nav-badge">⇄ <b data-cmp-count>0</b></span></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="seccion contenedor" id="contenidoFicha">
+  <!-- Se llena dinámicamente con JS -->
+</section>
+
+<footer class="site-footer">
+  <div class="contenedor footer-legal">
+    <span>© <span data-anio></span> Dubon's. Proyecto académico — Feria Científica de Informática.</span>
+    <a href="catalogo.html" style="color:var(--amber);">← Volver al catálogo</a>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/db.js"></script>
+<script src="js/main.js"></script>
+<script src="js/vehiculo.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Dubon's</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">DUBON<span>'</span>S</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+      <li><a class="nav-link" href="comparador.html">Comparador</a></li>
+      <li><a class="nav-link" href="financiamiento.html">Financiamiento</a></li>
+      <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+      <li><span class="nav-badge">♥ <b data-fav-count>0</b></span></li>
+      <li><span class="nav-badge">⇄ <b data-cmp-count>0</b></span></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="seccion contenedor">
+  <div class="seccion-titulo">
+    <div>
+      <h1 style="font-size:2rem;">Contáctanos</h1>
+      <p>Escribinos por una unidad específica o una consulta general.</p>
+    </div>
+  </div>
+
+  <div class="contacto-grid">
+    <div>
+      <div id="mensajeEstado"></div>
+      <form id="formContacto">
+        <div class="campo" style="margin-bottom:14px;">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" required>
+        </div>
+        <div class="campo" style="margin-bottom:14px;">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" required>
+        </div>
+        <div class="campo" style="margin-bottom:14px;">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" placeholder="0000-0000" required>
+        </div>
+        <div class="campo" style="margin-bottom:14px;">
+          <label for="autoInteres">Auto de interés (opcional)</label>
+          <input type="text" id="autoInteres">
+        </div>
+        <div class="campo" style="margin-bottom:18px;">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-amber">Enviar consulta</button>
+      </form>
+    </div>
+
+    <div>
+      <div class="tarjeta-info">
+        <h4>Teléfono</h4>
+        <p><a href="tel:+50212345678">2123-4567</a></p>
+      </div>
+      <div class="tarjeta-info">
+        <h4>Correo</h4>
+        <p><a href="mailto:info@dubons.gt">info@dubons.gt</a></p>
+      </div>
+      <div class="tarjeta-info">
+        <h4>Dirección</h4>
+        <p>12 Calle 3-45, Zona 10, Ciudad de Guatemala</p>
+      </div>
+      <div class="tarjeta-info">
+        <h4>Horario de atención</h4>
+        <p>Lunes a viernes: 8:00 – 18:30 hrs<br>Sábado: 8:00 – 16:00 hrs</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="contenedor footer-legal">
+    <span>© <span data-anio></span> Dubon's. Proyecto académico — Feria Científica de Informática.</span>
+    <a href="catalogo.html" style="color:var(--amber);">← Volver al catálogo</a>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/db.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contacto.js"></script>
+</body>
+</html>
